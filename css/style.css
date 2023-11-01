@@ -1,6 +1,26 @@
 @font-face {
-  font-family: "Neue Montreal";
+  font-family: "Neue Montreal Medium";
   src: url(../assets/OTF/PPNeueMontreal-Medium.otf);
+}
+@font-face {
+  font-family: "Neue Montreal Bold";
+  src: url(../assets/OTF/PPNeueMontreal-Bold.otf);
+}
+@font-face {
+  font-family: "Neue Montreal Book";
+  src: url(../assets/OTF/PPNeueMontreal-Book.otf);
+}
+@font-face {
+  font-family: "Neue Montreal Italic";
+  src: url(../assets/OTF/PPNeueMontreal-Italic.otf);
+}
+@font-face {
+  font-family: "Neue Montreal SemiBoldItalic";
+  src: url(../assets/OTF/PPNeueMontreal-SemiBolditalic.otf);
+}
+@font-face {
+  font-family: "Neue Montreal Thin";
+  src: url(../assets/OTF/PPNeueMontreal-Thin.otf);
 }
 
 body {
@@ -8,23 +28,43 @@ body {
   flex-direction: column;
 }
 
+h1 {
+  font-family: "Neue Montreal Book";
+  font-size: 70px;
+}
+
+h2 {
+  font-family: "Neue Montreal Book";
+  font-size: 50px;
+}
+
 main {
-  font-family: "Neue Montreal";
+    position: relative;
+    z-index: 1000;
+    padding: 32px;
+  font-family: "Neue Montreal Book";
+  overflow: hidden;
 }
 
 nav {
+  font-family: "Neue Montreal Book";
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 .searchBar {
+    position: absolute;
+    top: 450px;
+    z-index: 3000;
+  font-family: "Neue Montreal Book";
   display: flex;
   justify-content: center;
   padding: 24px;
 }
 
 .searchBar input {
+  font-family: "Neue Montreal Book";
   width: 50%;
   min-width: 300px;
   padding: 12px 24px;
@@ -39,12 +79,22 @@ nav {
   display: none !important;
 }
 
+button {
+  font-family: "Neue Montreal Book";
+}
+
 footer {
+  font-family: "Neue Montreal Book";
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 #photoSlider {
-  width: 300px;
+    position: relative;
+    z-index: 2000;
+    display: block;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
 }
