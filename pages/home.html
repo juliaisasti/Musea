@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -20,8 +21,30 @@
     <main>
       <h1>Título</h1>
       <h2>Subtítulo</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit explicabo laboriosam vel est animi vitae? Exercitationem, aliquid veritatis architecto quo a earum atque beatae nobis aut consequatur libero sed maiores?</p>
-      <section id="searchBar"></section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit explicabo
+        laboriosam vel est animi vitae? Exercitationem, aliquid veritatis
+        architecto quo a earum atque beatae nobis aut consequatur libero sed
+        maiores?
+      </p>
+      <section class="searchBar">
+        <input
+          id="search"
+          type="search"
+          placeholder="Start typing to search..."
+          list="search-suggestions"
+          autocomplete="off"
+        />
+
+        <datalist id="search-suggestions">
+          <option value="JavaScript"></option>
+          <option value="CSS"></option>
+          <option value="Accessibility"></option>
+          <option value="Web Design"></option>
+        </datalist>
+      </section>
+      <section class="postsContainer">
+      </section>
       <button id="getResultsBtn">Search</button>
       <button id="luckyBtn">I'm feeling artsy</button>
       <section id="photoSlider"></section>
