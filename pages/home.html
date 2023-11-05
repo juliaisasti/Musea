@@ -15,7 +15,7 @@
         <a href="./about.html">About</a>
         <a href="./map.html">Map</a>
         <a href="./gallery.html">Your Gallery</a>
-        <a href="./profile.html">Profile</a>
+        <a id="googleUser" href="./profile.html">Profile</a>
       </nav>
     </header>
     <main>
@@ -25,14 +25,14 @@
         <input
           id="search"
           type="search"
+          class = "search"
           placeholder="Start typing to search..."
           autocomplete="off"
         />
-      </section>
-      <section class="postsContainer">
-      </section>
+
       <button id="getResultsBtn">Search</button>
       <button id="luckyBtn">I'm feeling artsy</button>
+    </section>
       <section id="photoSlider"></section>
     </main>
     <footer>
@@ -40,6 +40,6 @@
       <a href="https://metmuseum.github.io/">API</a>
       <a href="./home.html"><img src="../assets/logo.png" alt="logo" /></a>
     </footer>
-    <script src="../script.js"></script>
+    <script src="../script.js" type="module"></script>
   </body>
 </html>
