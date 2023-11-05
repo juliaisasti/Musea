@@ -21,9 +21,11 @@ async function getSliderImg() {
         let img = objectsImgData.primaryImage;
         let name = objectsImgData.title;
         console.log(objectsImgData);
-        document.getElementById("photoSlider").innerHTML = `<section>
-        <img id="photoSlider" src="${img}" alt="${name}"
-        </section>`;
+        if (objectsImgData.isHighlight = "true") {
+            document.getElementById("photoSlider").innerHTML = `<section>
+            <img id="photoSlider" src="${img}" alt="${name}"
+            </section>`
+        };
     } catch (error) {
         console.log("Error");
     }

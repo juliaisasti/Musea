@@ -28,6 +28,20 @@ body {
   flex-direction: column;
 }
 
+a:link {
+  font-family: "Neue Montreal Medium";
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  font-family: "Neue Montreal Bold";
+}
+
+a:visited {
+  color: #000;
+}
+
 h1 {
   font-family: "Neue Montreal Book";
   font-size: 70px;
@@ -36,6 +50,16 @@ h1 {
 h2 {
   font-family: "Neue Montreal Book";
   font-size: 50px;
+}
+
+h3 {
+  font-family: "Neue Montreal Book";
+  font-size: 30px;
+}
+
+p {
+  font-family: "Neue Montreal Book";
+  font-size: 22px;
 }
 
 main {
@@ -51,11 +75,13 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
 }
 
 .searchBar {
     position: absolute;
-    top: 450px;
+    top: 500px;
+    left: 40%;
     z-index: 3000;
   font-family: "Neue Montreal Book";
   display: flex;
@@ -74,13 +100,26 @@ nav {
   outline: none;
 }
 
-.search-bar [list]::-webkit-list-button,
-.search-bar [list]::-webkit-calendar-picker-indicator {
-  display: none !important;
+#getResultsBtn {
+  font-family: "Neue Montreal Book";
+  position: absolute;
+  top: 580px;
+  padding: 8px;
+  border-radius: 14px;
+  border: 0px;
+  left: 45%;
+  z-index: 4000;
 }
 
-button {
+#luckyBtn {
   font-family: "Neue Montreal Book";
+  position: absolute;
+  top: 580px;
+  padding: 8px;
+  border: 0px;
+  border-radius: 14px;
+  left: 50%;
+  z-index: 4000;
 }
 
 footer {
@@ -88,6 +127,7 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-end;
 }
 
 #photoSlider {
@@ -95,6 +135,6 @@ footer {
     z-index: 2000;
     display: block;
   width: 100%;
-  max-height: 500px;
+  /* max-height: 500px; */
   overflow: hidden;
 }
