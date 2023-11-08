@@ -3,6 +3,8 @@
 
 Musea is a modern and interactive web application that aims to change the way people interact with museum databases. With Musea, anyone can explore a vast collection of artworks, learn about artists, and visit the world's most famous collections digitally. [See the project online here.](https://juliaisasti.github.io/Musea/pages/home.html) 
 
+![App Screenshot](./assets/Captura%20de%20pantalla%202023-11-08%20024956.png)
+
 Project's main focus, copied from its About page:
 One place to sum every museum API.
 
