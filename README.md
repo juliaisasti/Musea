@@ -24,9 +24,12 @@ This project was created for The Bridge's Fullstack Web Development course, by [
 - User Profiles: Create a profile through your Google account.
 - Responsive Design: Musea is designed to be accessible and user-friendly across desktop, tablet, and mobile devices.
 
-   
+## Future updates
 
-   
+- Artist Information: Detailed profiles of artists, including their biographies, notable works, and contributions to the art world.
+- Immersive Experience: Users can zoom in on high-resolution images, providing an immersive viewing experience.
+- Filters: Apply filters to refine your search results.
+- Personalized Profile: Change your avatar and username, save favorite artworks, and keep track of your art exploration journey.
     
 
 
