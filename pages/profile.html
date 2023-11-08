@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -15,19 +15,24 @@
         <a href="./about.html">About</a>
         <a href="./map.html">Map</a>
         <a href="./gallery.html">Your Gallery</a>
-        <a href="./profile.html">Profile</a>
+        <a id="googleUser">Login</a>
       </nav>
     </header>
     <main>
-      <h1>Título</h1>
-      <h2>Subtítulo</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit explicabo laboriosam vel est animi vitae? Exercitationem, aliquid veritatis architecto quo a earum atque beatae nobis aut consequatur libero sed maiores?</p>
+      <section id="profileContainer">
+        <p id="userProfilePic"></p>
+        <h2 id="userName"></h2>
+        <h2 id="userEmail"></h2>
+      </section>
+      <section class="logoutBtnContainer">
+        <button id="logOut">Log Out</button>
+      </section>
     </main>
     <footer>
       <a href="https://github.com/juliaisasti/Musea">GitHub Project</a>
       <a href="https://metmuseum.github.io/">API</a>
       <a href="./home.html"><img src="../assets/logo.png" alt="logo" /></a>
     </footer>
-    <script src="../script.js"></script>
+    <script src="../script.js" type="module"></script>
   </body>
 </html>
