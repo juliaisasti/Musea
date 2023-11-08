@@ -77,7 +77,7 @@ async function googleSignIn() {
 }
 
 // Sign Out
-if (window.location.pathname == "/pages/profile.html") {
+if (window.location.pathname == "/pages/profile.html" || document.title=="Profile") {
   document.getElementById("logOut").addEventListener("click", function (event) {
     signOut(auth)
       .then(() => {
@@ -110,7 +110,7 @@ auth.onAuthStateChanged((user) => {
   } else {
     console.log("No logged user");
     document.getElementById("googleUser").addEventListener("click", googleSignIn)
-    if (window.location.pathname == "/pages/profile.html") {
+    if (window.location.pathname == "/pages/profile.html" || document.title=="Profile") {
     document.getElementById("logOut").style="display: none"
     }
   }
@@ -118,7 +118,7 @@ auth.onAuthStateChanged((user) => {
 
 // Search bar
 
-if (window.location.pathname == "/pages/home.html") {
+if (window.location.pathname == "/pages/home.html" || document.title=="Home") {
   document
     .getElementById("getResultsBtn")
     .addEventListener("click", async function (event) {
