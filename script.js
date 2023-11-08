@@ -90,7 +90,7 @@ if (window.location.pathname == "/pages/profile.html") {
   });
 }
 
-// Estado del usuario
+// Pintar foto, nombre y usuario en Profile
 
 auth.onAuthStateChanged((user) => {
   if (user) {
@@ -104,7 +104,7 @@ auth.onAuthStateChanged((user) => {
         userProfile.innerHTML+=`<section id="profileContainer">
         <img src=${user.photoURL} id="userProfilePic"></img>
         <h2 id="userName">${user.displayName}</h2>
-        <h2 id="userEmail">${user.email}</h2>
+        <h3 id="userEmail">${user.email}</h3>
       </section>`
     }
   } else {
@@ -115,9 +115,6 @@ auth.onAuthStateChanged((user) => {
     }
   }
 });
-
-// Pintar foto, nombre y usuario en Profile
-
 
 // Search bar
 

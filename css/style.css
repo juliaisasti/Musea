@@ -42,6 +42,10 @@ a:visited {
   color: #000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-family: "Neue Montreal Book";
   font-size: 70px;
@@ -75,12 +79,12 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .searchBar {
     position: absolute;
-    top: 500px;
+    top: 425px;
     left: 40%;
     z-index: 3000;
   font-family: "Neue Montreal Book";
@@ -103,15 +107,21 @@ nav {
 #getResultsBtn {
   font-family: "Neue Montreal Book";
   position: absolute;
-  top: 80px;
+  top: 30px;
   padding: 8px;
   border-radius: 14px;
   border: 0px;
-  left: 25%;
+  left: 73%;
   z-index: 4000;
+  transition-duration: 0.4s;
 }
 
-#luckyBtn {
+#getResultsBtn:hover {
+  background-color: #DAE8D9;
+  cursor: pointer;
+}
+
+/* #luckyBtn {
   font-family: "Neue Montreal Book";
   position: absolute;
   top: 80px;
@@ -120,7 +130,7 @@ nav {
   border-radius: 14px;
   left: 45%;
   z-index: 4000;
-}
+} */
 
 footer {
   font-family: "Neue Montreal Book";
@@ -128,6 +138,9 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  position: fixed;
+  bottom: 0;
+  left: 87%;
 }
 
 #photoSlider {
@@ -173,4 +186,83 @@ footer {
 .profileContainer {
   display: flex;
   flex-direction: column;
+}
+
+#userProfilePic {
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  h3 {
+    font-family: "Neue Montreal Book";
+    font-size: 20px;
+  }
+  
+  p {
+    font-family: "Neue Montreal Book";
+    font-size: 16px;
+  }
+
+  nav{
+    font-size: 14px;
+  }
+
+  footer{
+    font-size: 14px;
+    left:55%;
+  }
+
+  .fotoFondo {
+   
+  }
+
+  .searchBar {
+    position: absolute;
+    top: 310px;
+    left: 3%;
+    z-index: 3000;
+  font-family: "Neue Montreal Book";
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+.searchBar input {
+  font-family: "Neue Montreal Book";
+  width: 50%;
+  min-width: 300px;
+  padding: 6px 18px;
+  border-radius: 24px;
+  font-size: 16px;
+  border: 0px;
+  outline: none;
+  background-color: #E3E9D8;
+}
+
+#getResultsBtn {
+  font-family: "Neue Montreal Book";
+  position: absolute;
+  top: 75px;
+  padding: 8px;
+  border-radius: 14px;
+  border: 0px;
+  left: 40%;
+  z-index: 4000;
+}
+
+#photoSlider {
+  padding-bottom: 50px;
+}
+
+.card > img {
+  width: 200%;
+}
 }
