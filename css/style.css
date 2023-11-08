@@ -192,7 +192,7 @@ footer {
   border-radius: 50%;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   h1 {
     font-size: 40px;
   }
@@ -227,7 +227,7 @@ footer {
   .searchBar {
     position: absolute;
     top: 310px;
-    left: 3%;
+    left: 9%;
     z-index: 3000;
   font-family: "Neue Montreal Book";
   display: flex;
